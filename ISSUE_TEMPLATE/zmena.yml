@@ -1,0 +1,55 @@
+name: Změna nebo nová funkce
+description: Požadavek na změnu chování nebo novou funkci.
+title: Krátký název změny
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vyplň, co víš. Nevadí, když nevíš, do kterého repa to patří. Současný stav v kódu, řešení a akceptační kritéria doplní vývoj.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Produkt
+      options:
+        - BI (přehledy, dashboardy, exporty)
+        - DynamicAd
+        - mBOX
+        - Web
+        - Jiné / nevím
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problém
+      description: Proč dnešní stav nestačí? Koho to trápí?
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Cíl
+      description: Kdo má po změně umět co? Co se naopak nesmí stát?
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Pravidla, která už jsou rozhodnutá
+      description: Limity, výjimky, oprávnění. Jen to, co je opravdu rozhodnuté.
+  - type: input
+    id: deadline
+    attributes:
+      label: Termín
+      description: Do kdy to je potřeba a proč (klient, kampaň, prezentace).
+  - type: textarea
+    id: out
+    attributes:
+      label: Mimo rozsah
+      description: Co tahle issue řešit nemá.
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Přílohy
+      description: Obrázky, .md nebo jiné soubory sem přetáhni myší.
