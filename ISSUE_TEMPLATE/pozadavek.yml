@@ -1,0 +1,49 @@
+name: Požadavek nebo problém
+description: Něco nefunguje, chceš něco nového, nebo se potřebuješ zeptat.
+title: "Stručně, o co jde"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Napiš to vlastními slovy, jako bys to říkal kolegovi. Technické detaily doplní vývoj a když bude něco nejasné, zeptá se v komentáři.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: O co jde?
+      options:
+        - Něco nefunguje
+        - Chtěl bych něco nového nebo jinak
+        - Mám dotaz
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Popiš to vlastními slovy
+      description: Co se děje nebo co bys potřeboval, a proč je to důležité.
+      placeholder: |
+        Např.: V přehledu kampaní za říjen nesedí počet přehrání s exportem do Excelu. Potřebuju to pro klienta na páteční schůzku.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Kde to vidíš?
+      description: Odkaz na stránku nebo název přehledu. Nevíš? Nech prázdné.
+      placeholder: https://bi.meditz.cz/…
+  - type: dropdown
+    id: when
+    attributes:
+      label: Do kdy to potřebuješ?
+      options:
+        - Hoří
+        - Tento týden
+        - Tento měsíc
+        - Bez termínu
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Snímek obrazovky
+      description: Obrázek nebo soubor sem přetáhni myší, nebo vlož přes Ctrl+V / Cmd+V.

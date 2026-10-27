@@ -4,12 +4,11 @@ Výchozí soubory pro všechna repa organizace `MEDITZsro`. Repo je **veřejné*
 
 | Soubor | Co dělá |
 | --- | --- |
-| `ISSUE_TEMPLATE/chyba.yml` | formulář Chyba, typ issue `Bug` |
-| `ISSUE_TEMPLATE/zmena.yml` | formulář Změna nebo nová funkce, typ issue `Feature` |
+| `ISSUE_TEMPLATE/pozadavek.yml` | jediný formulář Požadavek nebo problém, psaný pro produkťáka |
 | `ISSUE_TEMPLATE/config.yml` | vypíná prázdnou issue bez formuláře |
 
-Formuláře platí v každém repu organizace, které nemá vlastní složku `.github/ISSUE_TEMPLATE/`. Jakmile ji repo má, výchozí formuláře se v něm nepoužijí vůbec, ani jeden. Proto repa vlastní formuláře nezakládají.
+Formulář platí v každém repu organizace, které nemá vlastní složku `.github/ISSUE_TEMPLATE/`. Jakmile ji repo má, výchozí formulář se v něm nepoužije. Proto repa vlastní formuláře nezakládají.
 
-Formuláře nepoužívají štítky, protože štítek by musel existovat v každém repu. Druh issue nese typ (`Bug`, `Feature`), který je nastavený na úrovni organizace.
+Formulář nenastavuje štítky ani typ issue. Štítek by musel existovat v každém repu a druh (chyba, změna, dotaz) produkťák volí v poli O co jde. Typ issue organizace (`Task`, `Bug`, `Feature`) a štítky nastavuje vývoj při zatřídění.
 
 Pravidla pro BI jsou v `BI/docs/13-dokumentace-repozitare.md`, kapitola 6.
