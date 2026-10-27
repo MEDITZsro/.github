@@ -4,8 +4,8 @@ Výchozí soubory pro všechna repa organizace `MEDITZsro`. Repo je **veřejné*
 
 | Soubor | Co dělá |
 | --- | --- |
-| `ISSUE_TEMPLATE/pozadavek.yml` | jediný formulář Požadavek nebo problém, psaný pro produkťáka |
-| `ISSUE_TEMPLATE/config.yml` | vypíná prázdnou issue bez formuláře |
+| `.github/ISSUE_TEMPLATE/pozadavek.yml` | jediný formulář Požadavek nebo problém, psaný pro produkťáka |
+| `.github/ISSUE_TEMPLATE/config.yml` | vypíná prázdnou issue bez formuláře |
 
 Formulář platí v každém repu organizace, které nemá vlastní složku `.github/ISSUE_TEMPLATE/`. Jakmile ji repo má, výchozí formulář se v něm nepoužije. Proto repa vlastní formuláře nezakládají.
 
