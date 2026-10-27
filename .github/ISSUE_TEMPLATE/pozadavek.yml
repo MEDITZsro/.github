@@ -1,11 +1,10 @@
 name: Požadavek nebo problém
 description: Něco nefunguje, chceš něco nového, nebo se potřebuješ zeptat.
-title: "Stručně, o co jde"
 body:
   - type: markdown
     attributes:
       value: |
-        Napiš to vlastními slovy, jako bys to říkal kolegovi. Technické detaily doplní vývoj a když bude něco nejasné, zeptá se v komentáři.
+        Do titulku nahoře napiš stručně, o co jde. Pak to popiš vlastními slovy, jako bys to říkal kolegovi. Technické detaily doplní vývoj a když bude něco nejasné, zeptá se v komentáři.
   - type: dropdown
     id: kind
     attributes:
